@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  background-color: #fec56d;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+
+  &-name {
+    position: relative;
+    color: white;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 13rem;
+    font-size: 15rem;
+  }
+
+  &-bio {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 20rem;
+    max-width: 69rem;
+    margin-top: 10rem;
+  }
+}
