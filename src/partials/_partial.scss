@@ -1,3 +1,17 @@
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 @font-face {
   font-family: "main";
   src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
