@@ -4,7 +4,7 @@
     display: flex;
     position: relative;
     // justify-content: space-around;
-    background-color: #f2ece0;
+    // background-color: #f2ece0;
     margin: 4.5rem 4rem 4.5rem 4rem;
     border-radius: 1rem;
     height: 50rem;
@@ -37,6 +37,9 @@
     color: rgb(61, 59, 59);
     margin-left: 4rem;
     margin-bottom: 3rem;
+    // text-shadow: 2px 2px;
+    color: rgb(253, 253, 253);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   &-text {
     width: 36rem;
@@ -44,5 +47,14 @@
     line-height: 2.5rem;
     margin-right: 8rem;
     margin-left: 4rem;
+  }
+
+  // &__section {
+  // display: flex;
+  // }
+
+  &__dotted {
+    border-top: 3px dotted red;
+    width: 40rem;
   }
 }

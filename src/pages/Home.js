@@ -6,10 +6,11 @@ import pic1 from '../assets/useme.png'
 const Home = () => {
   return (
     <div className="home">
-
+      {/* <h3 className="home-hi">Hi, I'm</h3> */}
       <div className="home__content">
-        <img className="home__img" src={pic1}></img>
-       
+        {/* <div className> */}
+          <img className="home__img" src={pic1}></img>
+        {/* </div> */}
         <h1 className="home-name">Glenny</h1>
       </div>
 
