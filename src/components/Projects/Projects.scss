@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projects {
+  &__dotted {
+    border-top: 3px dotted #bbb;
+    margin: 0 4rem 0 4rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-family: "Bebas Neue";
+    color: rgb(61, 59, 59);
+    // margin-left: 4rem;
+    margin-bottom: 3rem;
+    // text-shadow: 2px 2px;
+    color: rgb(253, 253, 253);
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    text-align: center;
+  }
+}

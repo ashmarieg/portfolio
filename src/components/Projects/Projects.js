@@ -3,7 +3,9 @@ import './Projects.scss'
 
 const Projects = () => {
   return (
-    <div>
+    <div className="projects">
+      <hr className="projects__dotted"></hr>
+      <h1 className="projects__title">Projects</h1>
 
     </div>
   )
