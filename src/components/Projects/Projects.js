@@ -1,11 +1,27 @@
 import React from 'react'
 import './Projects.scss'
+import pic1 from '../../assets/Screen Shot 2021-07-07 at 4.36.58 PM.png'
+import pic2 from '../../assets/Screen Shot 2021-07-07 at 4.37.02 PM.png'
+
+
+
 
 const Projects = () => {
   return (
     <div className="projects">
-      <hr className="projects__dotted"></hr>
-      <h1 className="projects__title">Projects</h1>
+      <h1 className="projects__title">PROJECTS</h1>
+      <div className="projects__container">
+        <img src={pic1}/>
+        <img src={pic2}/>
+        <img src={pic1}/>
+        <img src={pic2}/>
+        <img src={pic2}/>
+        <img src={pic1}/>
+
+      </div>
+
+      
+    
 
     </div>
   )

@@ -17,7 +17,7 @@ function Contact() {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
+    <form className="contact" onSubmit={sendEmail}>
       <input type="hidden" name="contact_number" />
       <label>Name</label>
       <input type="text" name="user_name" />

@@ -5,39 +5,38 @@
   box-sizing: border-box;
 }
 .about {
+  background-color: rgb(250, 250, 250);
+  padding: 5rem 0 18rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  margin-bottom: 4rem;
+
   &-container {
-    display: flex;
-    position: relative;
-    background-color: black;
     height: 40rem;
     width: 100%;
-    text-align: center;
     justify-content: center;
-    color: white;
   }
 
   &_title-container {
-    background-color: black;
-    padding: 1rem 0 1rem 0rem;
     text-align: center;
   }
 
   &-title {
     font-size: 3rem;
-    // margin-top: 3rem;
-    // font-family: "Bebas Neue";
-
-    color: white;
-    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
-    // text-align: center;
+    color: rgb(61, 59, 59);
+    text-align: center;
   }
+
   &-text {
     display: flex;
-    text-align: center;
     width: 50rem;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     justify-content: center;
+    padding: 2rem 0rem 0rem 3rem;
   }
 
   &__dotted {
