@@ -10,10 +10,19 @@ const Projects = () => {
   return (
     <div className="projects">
       <h1 className="projects__title">PROJECTS</h1>
-      <div className="projects__container">
+      <div className="projects__imgcontainer">
+        <p className="projects__thumb">
         <img src={pic1}/>
+        <span><input type="button" value="Learn More"></input></span>
+        </p>
+        <p className="projects__thumb">
         <img src={pic2}/>
+        <span><input type="button" value="Learn More"></input></span>
+        </p>
+        <p className="projects__thumb">
         <img src={pic1}/>
+        <span><input type="button" value="Learn More"></input></span>
+        </p>
         <img src={pic2}/>
         <img src={pic2}/>
         <img src={pic1}/>
