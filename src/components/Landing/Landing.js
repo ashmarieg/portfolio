@@ -5,12 +5,7 @@ import hero from '../../assets/SolidBackgroundAshleyGlenny.png'
 function Landing() {
   return (
     <div className="landing">
-     
-      <div className="landing__hero">
-        <img src={hero} alt="hero"></img>
-      </div>
-
-      
+      <img className="landing__hero" src={hero} alt="hero"></img>
     </div>
   )
 }

@@ -1,4 +1,13 @@
 @use '../../partials/partial' as *;
 
 .landing {
+  max-width: 18rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  &__hero {
+    height: 18rem;
+    width: 29rem;
+  }
 }
