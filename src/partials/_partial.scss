@@ -1,5 +1,10 @@
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @mixin tablet {
   @media screen and (min-width: $tablet-breakpoint) {
     @content;
