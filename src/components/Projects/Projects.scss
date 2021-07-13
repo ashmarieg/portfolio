@@ -1,40 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+@use '../../partials/partial' as *;
 .projects {
   margin-bottom: 5rem;
+  max-width: 30rem;
+  margin: auto;
 
-  &__title {
-    font-size: 3rem;
-    color: rgb(61, 59, 59);
-    text-align: center;
-    // width: 15rem;
-    text-decoration: underline;
-    margin-bottom: 4rem;
-    // border-bottom: 1px solid black;
+  @include tablet {
+    max-width: 48rem;
+  }
+
+  @include desktop {
+    max-width: 64rem;
+  }
+  img {
+    height: 16rem;
+    width: 23rem;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      height: 13rem;
+      width: 20rem;
+      padding-right: 0.5rem;
+    }
+    @include desktop {
+      height: 10rem;
+      width: 17rem;
+    }
   }
 
   &__imgcontainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 
-    max-width: 90rem;
-    justify-content: center;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    color: rgb(61, 59, 59);
+    text-align: center;
+    text-decoration: underline;
+    margin: 2.5rem 0 2rem 0;
   }
 
   &__imgcontainer p {
     position: relative;
     display: inline-block;
   }
-  img {
-    height: 18rem;
-    width: 23rem;
-    // position: relative;
-    // margin: 0 0.5rem 1rem 0.3rem;
-  }
+
   &__imgcontainer .projects__thumb:hover img {
     filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
