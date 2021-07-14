@@ -1,5 +1,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
+import Form from 'react-bootstrap/Form';
 
 import './Contact.scss';
 
@@ -8,7 +9,7 @@ function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_klnupno', 'template_erechao', e.target, 'user_LVelaRjEnySJLjHM3xmUy')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -17,16 +18,31 @@ function Contact() {
   }
 
   return (
-    <form className="contact" onSubmit={sendEmail}>
-      <input placeholder="Name" type="hidden" name="contact_number" />
-      {/* <label>Name</label> */}
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+
+<section className="contact">
+
+  <div className="contact__wrapper"> 
+      <div className="contact__div">
+        <h1 className="contact__title">Contact Me</h1>
+    <Form className="contact__form" onSubmit={sendEmail}>
+      <Form.Group controlId="formGroupName">
+    <Form.Label className="label" >Name</Form.Label>
+    <Form.Control type="name" placeholder="Name" />
+  </Form.Group>
+  <Form.Group controlId="formGroupEmail">
+    <Form.Label className="label" >Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+  </Form.Group>
+  <Form.Group  controlId="formGroupComment">
+    <Form.Label className="label">Comment</Form.Label>
+    <Form.Control className="contact__comment" type="comment" placeholder="Leave a message" />
+  </Form.Group>
+</Form>
+</div>
+
+</div>
+</section>
+    
   );
 }
 
