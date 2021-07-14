@@ -62,6 +62,16 @@
     position: absolute;
     top: 185px;
     left: 110px;
+
+    @include tablet {
+      top: 120px;
+      left: 80px;
+    }
+
+    @include desktop {
+      top: 90px;
+      left: 56px;
+    }
   }
   &__imgcontainer .projects__thumb:hover span {
     display: block;
